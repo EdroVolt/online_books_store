@@ -15,9 +15,19 @@
     font-weight: normal;
 }
 
+button {
+    height: 40px;
+    background: var(--main-btn-bg-color);
+    color: #FFF;
+    font-weight: bold;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .product .product-img>img {
     width: 100%;
-    /* height: 200px; */
+    height: 450px;
 }
 
 /* 
@@ -27,4 +37,22 @@
 
 label {
     font-weight: 700;
+}
+
+.responsive {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: var(--main-btn-bg-color);
+}
+
+.slick-slide {
+    /* display: inline-block;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    padding-left: 5px;
+    padding-right: 5px;
 }
