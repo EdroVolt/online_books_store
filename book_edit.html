@@ -4,6 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/nouislider.min.css" />
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/lib/slick/slick.css">
+    <link rel="stylesheet" href="css/lib/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/usre_profile.css" />
+    <link rel="stylesheet" href="css/book_edit.css" />
     <title>Document</title>
 </head>
 
@@ -62,8 +71,54 @@
     </nav>
     <!-- /NAVBAR -->
 
-    
-    <form action=""></form>
+    <!-- book details -->
+    <div class="container">
+        <div id="upload-books" class="bg-white p-0 m-3">
+            <h2 class="text-center header">Edit my Book</h2>
+
+            <form action="" class="bg-white p-4">
+                <div class="form-group">
+                    <label for="book_title">Book title</label>
+                    <input type="text" class="form-control" id="book_title" name="book_title" value="KINGDOM OF LIES"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="book_author">Book author</label>
+                    <input type="text" class="form-control" id="book_author" name="book_author" value="Adrian M.Locas"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="book-category">Category</label>
+                    <select class="custom-select" id="book-category" required>
+                        <option selected>Choose...</option>
+                        <option value="1">Science</option>
+                        <option value="2">History</option>
+                        <option value="3">Sports</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="book-img">Image</label>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="book-img" name="book-img" required>
+                        <label class="custom-file-label" for="book-img" aria-describedby="inputGroupFileAddon02">
+                            Choose file
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <input type="number" class="form-control" id="price" name="price" value="20" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea class="form-control" id="description" required>lornkjsdnjk dsjfldsh jkdnf </textarea>
+                </div>
+
+                <button type="submit" class="">Upload</button>
+            </form>
+        </div>
+    </div>
+    <!-- End book details -->
 
     <!-- FOOTER -->
     <footer id="footer">
@@ -142,7 +197,8 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/nouislider.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="css/lib/slick/slick.js"></script>
+    <script src="js/book_edit.js"></script>
     <!-- End Script -->
 </body>
 
